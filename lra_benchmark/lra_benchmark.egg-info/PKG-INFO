@@ -1,3 +1,29 @@
+Metadata-Version: 2.1
+Name: lra-benchmark
+Version: 0.1.3
+Summary: A library for benchmarking lightweight Vision Transformers following the LRA methodology
+Home-page: https://github.com/SamiAGOURRAM/LRA-Benchmark-for-image-classification-on-CIFAR-10.git
+Author: Sami Agourram
+Author-email: agourram.ma@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Sure, I can provide you with a detailed README.md file and guide you through the steps to publish your library to PyPI.
+
 # LRA Benchmark for Image Classification on CIFAR-10
 
 The LRA Benchmark for Image Classification on CIFAR-10 is a project that provides a benchmark for evaluating image classification models on the CIFAR-10 dataset. It includes a set of pre-defined models, as well as a framework for running benchmark experiments and reporting key metrics.
@@ -8,20 +34,20 @@ The project is structured as follows:
 
 ```
 lra_benchmark/
-├── lra_benchmark/
-│   ├── models/
-│   │   ├── base_model.py
-│   │   └── tiny_vit.py
-│   ├── dataset.py
-│   ├── benchmark.py
-│   ├── config.py
-│   └── utils/
-│       └── optimizer.py
-├── examples/
-│   └── benchmark_example.py
-├── tests/
-├── setup.py
-└── README.md
+â”œâ”€â”€ lra_benchmark/
+â”‚   â”œâ”€â”€ models/
+â”‚   â”‚   â”œâ”€â”€ base_model.py
+â”‚   â”‚   â””â”€â”€ tiny_vit.py
+â”‚   â”œâ”€â”€ dataset.py
+â”‚   â”œâ”€â”€ benchmark.py
+â”‚   â”œâ”€â”€ config.py
+â”‚   â””â”€â”€ utils/
+â”‚       â””â”€â”€ optimizer.py
+â”œâ”€â”€ examples/
+â”‚   â””â”€â”€ benchmark_example.py
+â”œâ”€â”€ tests/
+â”œâ”€â”€ setup.py
+â””â”€â”€ README.md
 ```
 
 - `lra_benchmark/models/`: Contains the implementation of the base model class (`BaseModel`) and the pre-defined model architectures, such as `TinyViT`.
@@ -85,4 +111,6 @@ print(f"Test Loss: {metrics['test_loss']:.4f}")
 print(f"Model Size: {metrics['model_size']} parameters")
 print(f"Inference Time: {metrics['inference_time']:.4f} seconds")
 ```
+
+
 

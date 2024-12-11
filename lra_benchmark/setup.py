@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lra_benchmark",
-    version="0.1.0",
+    version="0.1.3",
     author="Sami Agourram",
     author_email="agourram.ma@gmail.com",
     description="A library for benchmarking lightweight Vision Transformers following the LRA methodology",

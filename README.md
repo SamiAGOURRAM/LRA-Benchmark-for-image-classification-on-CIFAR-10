@@ -1,5 +1,3 @@
-Sure, I can provide you with a detailed README.md file and guide you through the steps to publish your library to PyPI.
-
 # LRA Benchmark for Image Classification on CIFAR-10
 
 The LRA Benchmark for Image Classification on CIFAR-10 is a project that provides a benchmark for evaluating image classification models on the CIFAR-10 dataset. It includes a set of pre-defined models, as well as a framework for running benchmark experiments and reporting key metrics.
@@ -59,6 +57,12 @@ class MyModel(BaseModel):
         x = x.view(x.size(0), -1)
         x = self.fc(x)
         return x
+    def config(self):
+        return{
+            "name" : "model_name",
+            "num_parameters" : "num_parameters",
+            "other information" : "other_information"
+        }
 ```
 
 Once you've defined your custom model, you can use it in the same way as the `TinyViT` model in the `benchmark_example.py` script:
